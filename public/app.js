@@ -1,7 +1,7 @@
 // Facebook Mini - Frontend Pentest
 // L'URL du backend sera à configurer après déploiement sur Render
 
-let API_BASE_URL = ''; // On configurera après le déploiement
+let API_BASE_URL = 'https://facebook-test-aizf.onrender.com'; // On configurera après le déploiement
 
 document.getElementById('loginForm').addEventListener('submit', async function(e) {
     e.preventDefault();
