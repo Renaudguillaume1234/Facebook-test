@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Mini - Pentest Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📱 Facebook Mini</h1>
+            <p>Lab de Pentesting - Réseau Social</p>
+        </header>
+        
+        <div class="auth-box">
+            <h2>Connexion Sécurisée</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+                <input type="password" id="password" placeholder="Mot de passe" required>
+                <button type="submit">🔐 Se connecter</button>
+            </form>
+            <div id="message"></div>
+            
+            <div class="test-accounts">
+                <h3>🧪 Comptes de Test :</h3>
+                <p><strong>admin</strong> / password123</p>
+                <p><strong>john</strong> / password123</p>
+            </div>
+
+            <div class="pentest-tips">
+                <h3>🎯 Tests à Effectuer :</h3>
+                <p><strong>SQL Injection :</strong> admin' OR '1'='1' --</p>
+                <p><strong>XSS Test :</strong> &lt;script&gt;alert('XSS')&lt;/script&gt;</p>
+            </div>
+        </div>
+        
+        <div class="security-warning">
+            <h3>⚠️ LAB DE PENTESTING</h3>
+            <p>Ce site contient des failles de sécurité intentionnelles pour l'apprentissage du hacking éthique.</p>
+            <p><strong>Ne pas utiliser avec des données réelles !</strong></p>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+  </html>
